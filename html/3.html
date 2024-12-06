@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        table{
+            color: whitesmoke;
+            font-size:18px;
+            text-align: center;
+            margin:  auto;
+            border-radius: 2;
+        }
+        tr{
+            background-color: rgb(38, 58, 83);
+        }
+        th{
+            font-size: 34px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tr{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Task: Create a product catalog table that includes the following columns:
+        • Product Name
+        • Product Image (use placeholder image URLs)
+        • Price
+        • Description
+        • Availability (in stock, out ofstock)
+        Additional Requirements:
+        • Use theadfor the table header.
+        • Add a border and some basic styling using inline CSS.
+        • Use colspanor rowspanto merge cells where applicable.
+    -->
+
+    <table border="3px solid" style=" border: radius 2px;
+    color: black'; margin: 10vh auto; border-color: white ;font-size: large;"
+    cellspacing="5px" cellpadding="10px">
+
+        <thead>
+
+            <tr >
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Availability</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            
+            <tr>
+                <td>Product 1</td>
+                <td><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/007c19e5-f766-4719-b2c4-9baff9070bf2/JORDAN+MVP.png" width="200px" height="auto"
+                    alt=""></td>
+                <td>$100</td>
+                <td>A short description of Product 1.</td>
+                <td>In Stock</td>
+            </tr>
+
+            <tr>
+                <td>Product 2</td>
+                <td><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/aed7e5a1-d01e-4c24-9bbb-21a9f35fff3e/NIKE+ISPA+LINK+AXIS.png" width="180" height="auto"></td>
+                <td>$350</td>
+                <td>A short description of Product 2.</td>
+                <td>Out of Stock</td>
+            </tr>
+
+            <tr>
+                <td>Product 3</td>
+                <td><img src="https://i.pinimg.com/736x/67/48/7e/67487ee324a5b45474b3630909cc17c8.jpg"width="180" alt=""></td>
+                <td>$20</td>
+                <td>A short description of Product 3.</td>
+                <td >In Stock</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Product 4</td>
+                <td>$250</td>
+                <td colspan="2 ">This is a special bundle offer combining multiple products.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+</html>
